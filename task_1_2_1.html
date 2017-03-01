@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>任务二：零基础HTML及CSS编码（一）</title>
+	<style type="text/css">
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+	}
+	ul li{
+		list-style: none;
+	}
+	img{
+		vertical-align: bottom;
+	}
+	a{
+		text-decoration: none;
+		color: #0006DB;
+	}
+	body{
+		background-color: #0E0E0E;
+	}
+	table{
+		border-spacing: 0;
+	}
+	#contents{
+		width: 960px;
+		margin: 0 auto;
+	}
+	header{
+		position: relative;
+		background-color: #333;
+		width: 940px;
+		height: 45px;
+		padding: 10px;
+	}
+	header h1,header ul{
+		position: absolute;
+	}
+	header ul{
+		right: 10px;
+	}
+	header ul.nav_menu li{
+		display: inline-block;
+		padding-left: 5px;
+	}
+	header ul.nav_menu li a{
+		font-size: 12px;
+		color: #FFF4EA;
+		height: 45px;
+		display: table-cell;
+		vertical-align: bottom;
+	}
+	header ul.nav_menu li a:hover{
+		text-decoration: underline;
+	}
+	main{
+		background-color: #DEDEDE;
+		padding: 10px;
+	}
+	.area1,.area2,.area3,.area4,.area5{
+		background-color: #fff;
+		width: 920px;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+	.area1 h1,h2,h3{
+		padding-bottom: 10px;
+	}
+	.area2 h1,h2,h3{
+		padding-bottom: 10px;
+	}	
+	.area3 h1,h2,h3{
+		padding-bottom: 10px;
+	}	
+	.area1 h1{
+		color: #110011;
+		font-size: 18px;
+	}
+	.area1 h2{
+		color: #706B71;
+		font-size: 16px;
+	}
+	.area1 h3{
+		color: #908DA0;
+	}
+	.area1 p{
+		line-height: 2;
+		text-indent: 20px;
+	}
+	.area1 p a,.area2 p a{
+		text-decoration: underline;
+	}
+	.area1 img,.area2 img{
+		padding: 10px 0;
+	}
+	.area2 ul{
+		padding-left: 20px;
+	}
+	.area3 ul li{
+		text-align: center;
+		width: 371px;
+		margin-bottom: 20px;
+		border:1px solid #CECECE;
+	}
+	.area3 ul li p{
+		padding: 5px 0;
+	}
+	.area4 ol{
+		padding-left: 20px;
+	}
+	table {
+		width: 100%;
+		border: 1px solid #ddd;
+		border-left: 1px;
+		border-top: 1px;
+	}
+	table tr th{
+		width: 30%;
+		border-bottom: 1px;
+		background-color: #F8F8F9;
+	}
+	table tr th:first-child{
+		width: 40%;
+	}
+	table tr th:last-child{
+		width: 40%;
+	}
+	td{
+		padding-left: 5px;
+	}
+	td,th{
+		border: 1px solid #DBDBDB;
+		border-bottom: 1px;
+		border-right: 1px;
+		height: 30px;
+	}
+	tr:last-child td{
+		background-color: #ccc;
+	}
+	.area5 h1{
+		border-left: 3px solid #ccc;
+		padding: 10px 0;
+		padding-left: 10px;
+	}
+	.setLeft{
+		padding-left: 150px;
+	}
+	.area5 p {
+		padding-bottom: 15px;
+	}
+	.area5 p span{
+		width: 120px;
+		display: inline-block;
+		padding-right: 20px;
+		text-align: right;
+		vertical-align: top;
+	}
+	.area5 p span:last-child{
+		padding: 4px 0;
+		padding-left: 90px;
+		color: #BFD3DC;
+	}
+	.area5 p em{
+		padding-right:10px; 
+		font-style: normal;
+	}
+	.area5 p input{
+		height: 16px;
+		vertical-align: bottom;
+	}
+	.area5 p label{
+		padding-right: 5px;
+	}
+	form p:last-child{
+		height: 166px;	
+	}
+	form textarea{
+		vertical-align: bottom;
+	}
+	button{
+		width: 100%;
+		background-color: #3355D0;
+		color: #fff;
+		height: 30px;
+		line-height: 30px;
+		border:0;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+	<div id="contents">
+		<header>
+			<h1><img src="https://tb2.bdstatic.com/tb/static-common/img/search_logo_big_73c81f8.png"></h1>
+			<ul class="nav_menu">
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#">导航链接四</a></li>
+			</ul>
+		</header>
+		<!-- //end header -->
+
+		<main>
+			<section class="area1">
+				<h1>课程概述</h1>
+				<h2>重要说明</h2>
+				<h3>作业提交截止时间：04-24</h3>
+				<p>
+					百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。<br>
+					课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，<a target="_blank" href="http://www.baidu.com">我们列出的参考资料未必</a>是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。<br>
+					课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。
+				</p>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+				<p>
+					百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，<a  target="_blank" href="http://www.baidu.com">但即使如此</a>，真正决定课程效果的，还是你的每一次思考和实践。<br>
+					课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，我们列出的参考资料未必是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍。<br>
+				</p>
+			</section>
+			<!-- //end area1 -->
+
+			<section class="area2">
+				<h1>课程概述</h1>
+				<h2>重要说明</h2>
+				<h3>作业提交截止时间：04-24</h3>
+				<p>
+					百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度的同学设计。我们尽力保证课程内容的质量以及学习难度的合理性，但即使如此，真正决定课程效果的，还是你的每一次思考和实践。<br>
+					课程多数题目的解决方案都不是唯一的，这和我们在实际工作中的情况也是一致的。因此，我们的要求不仅仅是实现设计稿的效果，更是要多去思考不同的解决方案，评估不同方案的优劣，然后使用在该场景下最优雅的方式去实现。那些最终没有被我们采纳的方案，同样也可以帮助我们学到很多知识。所以，<a target="_blank" href="http://www.baidu.com">我们列出的参考资料未必</a>是实现需求所必须的。有的时候，实现题目的要求很简单，甚至参考资料里就有，但是背后的思考和亲手去实践却是任务最关键的一部分。在学习这些资料时，要多思考，多提问，多质疑。相信通过和小伙伴们的交流，能让你的学习事半功倍
+				</p>
+				<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+				<ul>
+					<li>aaaaaaaaaaaa</li>
+					<li>bbbbbbbbbbbb</li>
+					<li>cccccccccccc</li>
+				</ul>
+			</section>
+			<!-- //end area2 -->
+
+			<section class="area3">
+				<h1>图片</h1>
+				<ul>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+					<li>
+						<p>为了梦醒！</p>
+						<img src="http://gss0.baidu.com/9rkZbzqaKgQUohGko9WTAnF6hhy/mms-res/fed/ife/ife_tutor/课程配图.3fb31f3e5af7e8d7.jpg">
+					</li>
+				</ul>
+			</section>
+			<!-- //end area3 -->
+
+			<section class="area4">
+				<h1>课程概述</h1>
+				<h2>重要说明</h2>
+				<h3>作业提交截止时间：04-24</h3>
+				<ol>
+					<li>排名1</li>
+					<li>排名2</li>
+					<li>排名3</li>
+				</ol>
+				<p>要说明 百度前端技术学院的课程任务是由百度前端工程师专为对前端不同掌握程度</p>
+				<table>
+					<thead>
+						<tr>
+							<th>表头</th><th>表头</th><th>表头</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>内容</td><td>内容</td><td><a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>内容</td><td>内容</td><td><a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>内容</td><td>内容</td><td><a href="#">link</a></td>
+						</tr>
+						<tr>
+							<td>统计</td><td colspan="2">1000</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<!-- //end area4 -->
+
+			<section class="area5">
+				<h1>小薇学院</h1>
+				<form>
+					<div class="setLeft">
+						<p><span>邮箱地址</span><input type="text" value="邮箱地址"><br><span>按格式输入</span></p>
+						<p><span>请输入密码</span><input type="password"></p>
+						<p><span>请再次输入密码</span><input type="password"><br><span>请准确输入</span></p>
+						<p class="sex"><span>性别</span><em><input class="sex1" type="radio" name="identity" checked="checked">男</em><em><input class="sex2" name="identity" type="radio">女</em></p>
+						<p><span>城市</span>
+							<select>
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="fiat">Fiat</option>
+								<option value="audi">Audi</option>
+							</select>
+						</p>
+						<p>
+							<span>爱好</span>
+							<input type="checkbox" id="yd"><label for="yd">运动</label>
+							<input type="checkbox" id="ys"><label for="ys">艺术</label>
+							<input type="checkbox" id="kx"><label for="kx">科学</label>
+							<input type="checkbox" id="ms"><label for="ms">美术</label>
+
+						</p>
+						<p><span>个人描述</span><textarea rows="10">this is a textarea</textarea></p>
+					</div>
+					<button type="submit" value="Submit">确认</button>
+					<!-- //end setLeft -->
+				</form>
+			</section>
+			<!-- //end area5 -->
+
+		</main>
+	</div>
+</body>
+</html>
